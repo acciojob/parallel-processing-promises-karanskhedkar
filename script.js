@@ -31,7 +31,7 @@ const downloadImages = () => {
     .then((data) => {
       loadingDiv.remove();
       data.forEach((img) => {
-        output.prepend(img);
+        output.append(img);
       });
     })
     .catch((error) => {
