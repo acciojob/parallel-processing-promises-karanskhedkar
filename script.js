@@ -18,6 +18,7 @@ const downloadImage = (imageUrl) => {
 };
 
 const downloadImages = () => {
+  output.innerHTML="";
   const loadingDiv = document.createElement("div");
   loadingDiv.setAttribute("id", "loading");
   loadingDiv.textContent = "Loading...";
@@ -41,5 +42,3 @@ const downloadImages = () => {
       document.body.prepend(errorDiv);
     });
 };
-
-downloadImages();
